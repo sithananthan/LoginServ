@@ -1,0 +1,29 @@
+#div1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: darkblue;
+    background-color: darkgoldenrod;
+    display: table;
+    border: solid 2px black;
+}
+
+.row {
+    display: table-row;
+}
+.row label {
+	display: table-cell;
+	padding: 2px;
+}
+
+
+#submit {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: darkblue;
+    background-color: aqua;
+    border-radius: 2px;
+    float: right;
+    text-align: center;
+}
