@@ -19,7 +19,6 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
           
     String n=request.getParameter("uname");  
     String p=request.getParameter("pwd");
-    System.out.println("error");
           
     if(validate(n, p)){  
         RequestDispatcher requestDispatcher=request.getRequestDispatcher("welcome");  
@@ -36,7 +35,6 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
 
 	boolean validate(String uname, String password) {
 		boolean loginValue = false;
-		System.out.println("Validate method");
 		if (uname.equals("xsitlak") && password.equals("12345")) loginValue = true;
 		else if (uname.equals("xbalvid") && password.equals("23456")) loginValue = true;
 		
