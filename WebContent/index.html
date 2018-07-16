@@ -2,23 +2,24 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
 <meta charset="ISO-8859-1">
 <title>Welcome login Page</title>
 </head>
 <body>
 <div id="div1">
 	<form action="homepage" method="post">
-		 <div class = "row"> <label > Name : &nbsp; &nbsp; &nbsp;</label><input type="text" name="uname" /><br />
+		 <div class = "row"> <label > Name : &nbsp; &nbsp; &nbsp;</label><input type="text" id = "name" name ="uname"/><br />
     <br /> </div> 
     
-    <div class="row"> <label> Password: </label><input type="password" name="pwd" /><br />
+    <div class="row"> <label> Password: </label><input id = "pwd" type="password" name="pwd"/><br />
         
 		<br /> </div>
         
         <div class="row">    
-            <input id ="submit" type="submit" value="login" /> </div>
+            <input id ="submit" type="submit" onclick="return validate()" value="login" /> </div>
 	</form>
 </div>
-<script type="text/javascript" src="login.js"></script>
+
 </body>
 </html>

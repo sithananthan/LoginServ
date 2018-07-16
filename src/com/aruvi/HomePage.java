@@ -16,12 +16,12 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
   
     response.setContentType("text/html");  
     PrintWriter out = response.getWriter();  
-          
     String n=request.getParameter("uname");  
     String p=request.getParameter("pwd");
+    
           
-    if(validate(n, p)){  
-        RequestDispatcher requestDispatcher=request.getRequestDispatcher("welcome");  
+    if(validate(n, p)){
+        RequestDispatcher requestDispatcher=request.getRequestDispatcher("welcome");
         requestDispatcher.forward(request,response);  
     }  
     else{  
